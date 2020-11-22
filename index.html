@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Carousel Sample</title>
+  </head>
+  <body>
+    <ion-app>
+      <ion-header translucent>
+        <ion-toolbar>
+          <ion-title>Carousel Sample</ion-title>
+          <ion-buttons slot="end">
+            <ion-button>
+              <ion-icon name="mail"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <div class="ion-padding main">
+          <div class="ion-text-justify ion-padding">
+            <small>
+              Forgot to take your Pill or change your Ring or Plaster? Maybe you
+              just want a daily reminder to take your pills. Had unprotected
+              sex? Should you take your morning after pill?
+            </small>
+          </div>
+
+          <div class="ion-text-center">
+            <ion-button class="btn-slide" data-index="0" fill="outline"
+              >Pills</ion-button
+            >
+            <ion-button class="btn-slide" data-index="1" fill="outline"
+              >Patch</ion-button
+            >
+            <ion-button class="btn-slide" data-index="2" fill="outline"
+              >Ring</ion-button
+            >
+            <ion-button class="btn-slide" data-index="3" fill="outline"
+              >Cycle</ion-button
+            >
+          </div>
+
+          <ion-slides id="slides">
+            <ion-slide>
+              <ion-card>
+                <ion-card-header class="ion-text-center">
+                  <ion-card-subtitle>
+                    <ion-icon class="card-heart" name="heart"></ion-icon>
+                  </ion-card-subtitle>
+                  <ion-card-title>Pills</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content class="ion-text-center">
+                  <ion-icon class="card-icon" name="bandage-outline"></ion-icon>
+                  <p>
+                    <small>
+                      Did you forget to take one or more pills? We got your
+                      back!!
+                    </small>
+                  </p>
+                  <div class="ion-margin-top">
+                    <ion-button fill="solid">Start</ion-button>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-card>
+                <ion-card-header class="ion-text-center">
+                  <ion-card-subtitle>
+                    <ion-icon class="card-heart" name="heart"></ion-icon>
+                  </ion-card-subtitle>
+                  <ion-card-title>Patch</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content class="ion-text-center">
+                  <ion-icon class="card-icon" name="bandage-outline"></ion-icon>
+                  <p>
+                    <small>
+                      Did you forget to take one or more pills? We got your
+                      back!!
+                    </small>
+                  </p>
+                  <div class="ion-margin-top">
+                    <ion-button fill="solid">Start</ion-button>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-card>
+                <ion-card-header class="ion-text-center">
+                  <ion-card-subtitle>
+                    <ion-icon class="card-heart" name="heart"></ion-icon>
+                  </ion-card-subtitle>
+                  <ion-card-title>Rings</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content class="ion-text-center">
+                  <ion-icon class="card-icon" name="bandage-outline"></ion-icon>
+                  <p>
+                    <small>
+                      Did you forget to take one or more pills? We got your
+                      back!!
+                    </small>
+                  </p>
+                  <div class="ion-margin-top">
+                    <ion-button fill="solid">Start</ion-button>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-card>
+                <ion-card-header class="ion-text-center">
+                  <ion-card-subtitle>
+                    <ion-icon class="card-heart" name="heart"></ion-icon>
+                  </ion-card-subtitle>
+                  <ion-card-title>Cycle</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content class="ion-text-center">
+                  <ion-icon class="card-icon" name="bandage-outline"></ion-icon>
+                  <p>
+                    <small>
+                      Did you forget to take one or more pills? We got your
+                      back!!
+                    </small>
+                  </p>
+                  <div class="ion-margin-top">
+                    <ion-button fill="solid">Start</ion-button>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+          </ion-slides>
+        </div>
+      </ion-content>
+
+      <ion-footer>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button fill="outline">
+              <ion-icon slot="start" name="home-outline"></ion-icon>Home
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button fill="outline">
+              <ion-icon name="heart-outline"></ion-icon>
+            </ion-button>
+            <ion-button fill="outline">
+              <ion-icon name="search-outline"></ion-icon>
+            </ion-button>
+            <ion-button fill="outline">
+              <ion-icon name="person-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-footer>
+    </ion-app>
+    <script src="app.js"></script>
+  </body>
+</html>
